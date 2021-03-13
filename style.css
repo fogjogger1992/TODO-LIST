@@ -1,0 +1,98 @@
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  color: #354545;
+  background: linear-gradient(45deg, #005AA7, #38ef7d);
+}
+
+.card {
+  margin: auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.5);
+  padding: 25px;
+  border-radius: 20px;
+  width: 400px;
+}
+
+i {
+  cursor: pointer;
+}
+
+.title-todo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-inline input {
+  width: 85% !important;
+}
+
+.form-inline i {
+  font-size: 40px;
+  text-align: right;
+}
+
+.form-inline i:hover {
+  color: #00cebd;
+  transition-duration: 0.4s;
+}
+
+.checked {
+  color: #ccc;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.title-done {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 16px 0;
+}
+
+#my-done {
+  overflow-y: scroll;
+  height: 100px;
+}
+
+#my-todo {
+  overflow-y: scroll;
+  height: 150px;
+}
+
+label {
+  padding: 5px;
+  width: 300px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+}
+
+li:hover {
+  border-left: solid 5px #00cebd;
+  background-color: #eeeeee;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.delete {
+  color: #aaaaaa;
+}
+
+.delete:hover {
+  color: #f78604;
+  transition-duration: 0.4s;
+}
